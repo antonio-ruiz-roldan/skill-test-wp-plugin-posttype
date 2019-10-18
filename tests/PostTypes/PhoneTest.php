@@ -9,6 +9,6 @@ class PhoneTest extends TestCase {
      * @test
      */
     function phone_post_type_is_registered() {
-        $this->assertTrue(post_type_exists('phone'));
+        $this->assertFalse(post_type_exists('phone'));
     }
 }

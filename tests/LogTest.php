@@ -11,6 +11,9 @@ class LogTest extends TestCase {
     /**
      * setUp
      */
+	 
+	
+	
     public function setUp(): void
     {
         $this->log_dir = dirname (__DIR__) . DIRECTORY_SEPARATOR . 'log';
@@ -47,7 +50,9 @@ class LogTest extends TestCase {
     function debug_method_generates_log_file() {
         Log::debug("This is a debug message");
         
-        $this->assertFileExists($log_file);
+		
+		
+        $this->assertFileExists('log/monolog.log');
     }
 
     /**
@@ -56,6 +61,7 @@ class LogTest extends TestCase {
     function info_method_generates_log_file() {
         Log::info("This is a debug message");
         
-        $this->assertFileExists($log_file);
+		
+        $this->assertFileExists('log/monolog.log');
     }
 }

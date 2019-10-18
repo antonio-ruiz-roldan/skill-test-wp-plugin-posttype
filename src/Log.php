@@ -17,7 +17,7 @@ class Log
      * Logger
      */
     protected $logger;
-    protected $log_file = 'log/monolog.log';
+    
 
     /**
      * Constructor (singleton)
@@ -26,7 +26,7 @@ class Log
         //
 		
 		$log = new Logger('logPrueba');
-		$log->pushHandler(new StreamHandler($log_file, Logger::WARNING));
+		$log->pushHandler(new StreamHandler('log/monolog.log', Logger::WARNING));
 		
 		
 		$log->warning('Foo');

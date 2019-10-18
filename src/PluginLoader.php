@@ -2,7 +2,8 @@
 
 namespace PauPenin\WPSkillTest;
 
-use PauPenin\WPSkillTest\PostTypes\Laptop\Phone;
+use PauPenin\WPSkillTest\PostTypes\Laptop;
+use PauPenin\WPSkillTest\PostTypes\Phone;
 
 class PluginLoader
 {
